@@ -37,9 +37,9 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
       <nav className="relative bg-white">
         <div
           aria-label="Top"
-          className="mx-auto max-2-7xl border-gray-200 bg-white px-4 sm:px-6 lg:px-8"
+          className="mx-auto max-w-7xl border-gray-200 bg-white px-4 sm:px-6 lg:px-8"
         >
-          <div className="flex h-16 items-center bg-white">
+          <div className="flex h-16 items-center">
             <button
               type="button"
               className="rounded-md bg-white p-2 text-gray-400 lg:hidden"
@@ -48,7 +48,7 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
 
-            <div className="ml-4 flex lg:ml-8">
+            <div className="ml-4 flex lg:ml-0">
               <Link to="/" className="flex items-center">
                 <FaShopify size="40px" color="#885CF6" className="mr-2" />
               </Link>

@@ -38,7 +38,7 @@ const Signup = () => {
           <p className="text-slate-500">for your first visit!</p>
         </div>
 
-        <div className="flex w-full max-w-sm flex-col">
+        <div className="flex w-full max-w-sm flex-col items-center">
           <form
             onSubmit={handleSubmit((data) => submit(data))}
             className="flex w-full max-w-sm flex-col"
@@ -67,7 +67,7 @@ const Signup = () => {
               error={errors.email?.message}
               ariaInvalid={isDirty}
               labelText="Email"
-              type="text"
+              type="email"
               className="mb-3"
               autocomplete="on"
             />
@@ -111,7 +111,7 @@ const Signup = () => {
             />
           </form>
 
-          <div>
+          <div className="mt-10 text-slate-500">
             Already have an account?
             <Link to="/login" className="p-2 font-semibold text-violet-500">
               Log in

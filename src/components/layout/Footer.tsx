@@ -101,13 +101,15 @@ const Footer = () => {
                     e.preventDefault();
                     window.open(link, "_blank");
                   }}
+                  className="hover:bg-white-100 flex items-center justify-center rounded-full bg-white text-gray-600 shadow transition duration-150 ease-in-out hover:text-gray-900"
                 >
                   <svg
                     className="h-8 w-8 fill-current"
                     viewBox="0 0 40 40"
                     xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet"
                   >
-                    <path d={path} />
+                    <path d={path} transform="translate(10, 10)" />
                   </svg>
                 </button>
               </li>
