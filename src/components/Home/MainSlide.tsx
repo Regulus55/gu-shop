@@ -35,7 +35,7 @@ const MainSlider = () => {
         {mainSlidesData?.map((data) => (
           <SwiperSlide key={data.id}>
             <div
-              className="w-full h-[700px] bg-cover bg-no-repeat bg-center"
+              className="w-full h-[750px] bg-cover bg-no-repeat bg-center"
               style={{
                 backgroundImage: `url(${data.img})`,
                 backgroundPosition: "center",
@@ -47,11 +47,11 @@ const MainSlider = () => {
               <div className="flex flex-row items-center justify-center">
                 <span className="text-white text-xl mb-12">
                   An Online Shopping Mall for College Students
-                  <hr className="flex-1 border-t-2 border-gray-200 mx-2" />
+                  <hr className="border-t-2 border-gray-200 mx-2" />
                 </span>
               </div>
 
-              <h1 className="text-white text-5xl font-bold mb-10">
+              <h1 className="text-white text-5xl font-bold mb-10 text-center">
                 {data.title}
               </h1>
 

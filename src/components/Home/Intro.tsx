@@ -6,7 +6,7 @@ const Intro = () => {
           <h1 className="flex flex-col items-center justify-center text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-left">
             Welcome to the
             <br />
-            <span className="block text-violet-500 lg:inline">
+            <span className="block text-violet-500 lg:mt-4 lg:inline">
               Galaxy University Shop
             </span>
           </h1>

@@ -33,7 +33,7 @@ const GalaxySlide = () => {
           disabledClass: "opacity-20",
         }}
         spaceBetween={30}
-        slidesPerView={4}
+        slidesPerView={1}
         breakpoints={GALAXY_BREAK_POINTS}
         modules={[Navigation]}
         loop={true}

@@ -34,7 +34,7 @@ const NewGalaxySlide = () => {
           disabledClass: "opacity-20",
         }}
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={1}
         pagination={{
           el: ".custom-pagination",
           clickable: true,

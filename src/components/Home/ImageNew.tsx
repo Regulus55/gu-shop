@@ -19,12 +19,12 @@ const ImageRarity = () => {
           <div className={"px-6 pt-2 md:px-0"}>
             <h1
               className={
-                "text-center m-auto text-1xl  text-white tracking-tight text-gray-900 sm:text-6xl lg:max-w-1xl"
+                "text-center m-auto text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight text-gray-900 lg:max-w-1xl"
               }
             >
               New Items are updated{" "}
             </h1>
-            <p className="mx-auto max-w-2xl pt-8 text-lg text-white leading-8 text-gray-900">
+            <p className="mx-auto max-w-2xl text-lg sm:text-xl md:text-2xl lg:text-3xl pt-8 text-white leading-8 text-gray-900 text-center">
               “Experience the cutting-edge technology and convenience of our
               latest products”
             </p>

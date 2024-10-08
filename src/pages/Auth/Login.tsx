@@ -100,7 +100,7 @@ const Login = () => {
             text="Sign with Google"
             onClick={signWithGoogle}
             icon={() => <FcGoogle className="mr-2 text-2xl" />}
-            className="mt-6 w-full max-w-sm rounded-lg border border-gray-300 bg-white py-4 font-semibold test-slate-500 hover:bg-gray-50"
+            className="mt-8 w-full max-w-sm rounded-lg border border-gray-300 bg-white py-4 font-semibold test-slate-500 hover:bg-gray-50"
           />
           <Button
             text="Sign with Naver"
@@ -108,7 +108,7 @@ const Login = () => {
             icon={() => (
               <img src="/images/naver.png" className="mr-2 w-7 h-7" />
             )}
-            className="mt-6 w-full max-w-sm rounded-lg border border-gray-300 bg-white py-4 font-semibold test-slate-500 hover:bg-gray-50"
+            className="mt-2 w-full max-w-sm rounded-lg border border-gray-300 bg-white py-4 font-semibold test-slate-500 hover:bg-gray-50"
           />
           <Button
             text="Sign with Kakao"
@@ -116,10 +116,10 @@ const Login = () => {
             icon={() => (
               <img src="/images/kakao.png" className="mr-2 w-7 h-7" />
             )}
-            className="mt-6 w-full max-w-sm rounded-lg border border-gray-300 bg-white py-4 font-semibold test-slate-500 hover:bg-gray-50"
+            className="mt-2 w-full max-w-sm rounded-lg border border-gray-300 bg-white py-4 font-semibold test-slate-500 hover:bg-gray-50"
           />
 
-          <div className="mt-10 text-slate-500">
+          <div className="mt-8 text-slate-500">
             Don't have an account?
             <Link to="/signup" className="p-2 font-semibold text-violet-500">
               Sign up
