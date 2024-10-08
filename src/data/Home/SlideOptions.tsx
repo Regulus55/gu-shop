@@ -1,3 +1,18 @@
+export const MAIN_BREAK_POINTS = {
+  576: {
+    slidesPerView: 1,
+    spaceBetween: 30,
+  },
+  990: {
+    slidesPerView: 1,
+    spaceBetween: 30,
+  },
+  1300: {
+    slidesPerView: 1,
+    spaceBetween: 40,
+  },
+}; //화면크기 마다 몇개볼건지? 2,3,4
+
 export const GALAXY_BREAK_POINTS = {
   576: {
     slidesPerView: 2,
