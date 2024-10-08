@@ -10,8 +10,8 @@ const MainSlider = () => {
     <>
       <Swiper
         navigation={{
-          nextEl: ".image-swiper-button-next-Product",
-          prevEl: ".image-swiper-button-prev-Product",
+          nextEl: ".main-image-swiper-button-next-Product",
+          prevEl: ".main-image-swiper-button-prev-Product",
           disabledClass: "opacity-20",
         }}
         spaceBetween={30}
@@ -29,14 +29,14 @@ const MainSlider = () => {
         onSlideChange={() => console.log("slide change")}
         loop={true}
         autoplay={{
-          delay: 10000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
       >
         {mainSlidesData?.map((data) => (
           <SwiperSlide key={data.id}>
             <div
-              className="w-full  h-[800px] bg-cover bg-no-repeat bg-center"
+              className="w-full h-[700px] bg-cover bg-no-repeat bg-center"
               style={{
                 backgroundImage: `url(${data.img})`,
                 backgroundPosition: "center",
@@ -67,7 +67,7 @@ const MainSlider = () => {
       <div className={"mt-8 flex items-center justify-center"}>
         <div
           className={
-            "swiper-button image-swiper-button-prev-Product mr-4 h-6 w-6 cursor-pointer"
+            "swiper-button main-image-swiper-button-prev-Product mr-4 h-6 w-6 cursor-pointer"
           }
         >
           <ChevronLeftIcon />
@@ -75,7 +75,7 @@ const MainSlider = () => {
         <div className={"custom-pagination flex justify-center"} />
         <div
           className={
-            "swiper-button image-swiper-button-next-Product ml-4 h-6 w-6 cursor-pointer"
+            "swiper-button main-image-swiper-button-next-Product ml-4 h-6 w-6 cursor-pointer"
           }
         >
           <ChevronRightIcon />

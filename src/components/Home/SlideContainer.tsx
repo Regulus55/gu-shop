@@ -5,7 +5,7 @@ const SlideContainer = () => {
   return (
     <>
       <ProductSlide />
-      <NewArrivalSlide />
+      {/* <NewArrivalSlide /> */}
     </>
   );
 };

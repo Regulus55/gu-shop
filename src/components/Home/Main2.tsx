@@ -1,16 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { GlobeEuropeAfricaIcon } from "@heroicons/react/24/outline";
-import MainImage from "./MainImage";
-import { MAIN_DATA } from "data/Home/homeData";
-import MainSlide from "./MainSlide";
+import MainSlider from "./MainSlide";
 
-const Main = () => {
+const Main2 = () => {
   return (
-    <section className="relative">
-      <MainSlide />
+    <section>
+      <MainSlider />
     </section>
   );
 };
 
-export default Main;
+export default Main2;

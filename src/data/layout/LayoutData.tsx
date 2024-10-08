@@ -243,6 +243,6 @@ export const mainSlidesData = [
     title: "Galaxy Electronics Shop",
     description:
       "GU Shop is your ultimate destination for the newest Galaxy electronics, featuring smartphones, tablets, laptops, and wearable devices tailored for college life. Our online platform is designed for ease of use, enabling you to find the perfect products that support your academic and personal interests. Enjoy exclusive discounts and a variety of options that align with your lifestyle as a college student—all in one convenient shop.",
-    img: "/images/itemback2.jpg",
+    img: "/images/itemback3.jpg",
   },
 ];

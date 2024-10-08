@@ -43,11 +43,12 @@ const ImageRarity = () => {
                   Galaxy-Devices
                 </h1>
                 <p className="mx-auto max-w-2xl pt-12 text-lg leading-8 text-gray-900">
-                  Through special discounts and various events just for college
+                  {/* Through special discounts and various events just for college
                   students, we provide not only tools for studying but also
                   products that can provide complete satisfaction in your
-                  leisure time. “A solution optimized for your studies and daily
-                  life, join GU Shop now!”
+                  leisure time. */}
+                  “A solution optimized for your studies and daily life, join GU
+                  Shop now!”
                 </p>
               </div>
             </div>

@@ -5,11 +5,28 @@ import { newArrivalsData } from "../../data/layout/LayoutData";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 import ProductCard2 from "../ui/ProductCard2";
 import { NEW_BREAK_POINTS } from "data/Home/SlideOptions";
+import { Button } from "components/ui";
+import { useNavigate } from "react-router-dom";
 
 const NewGalaxySlide = () => {
+  const navigate = useNavigate();
+
   return (
     <section className={"mx-auto mt-12 w-full max-w-7xl py-4 md:mt-20"}>
       <ProductTitle title={"New Arrivals"} />
+
+      <div className={"flex items-center justify-between px-6"}>
+        <ProductTitle title={"Collect Trending Galaxy Product"} />
+        {/* <div className="hidden items-center justify-center sm:flex">
+          자세히보기
+        </div> */}
+        <Button
+          text={"View Details"}
+          onClick={() => navigate("/collections")}
+          className="mt-1 w-1/6 max-w-sm border border-gray-300 bg-white py-4 font-semibold text-slate-500 hover:bg-gray-50"
+        />
+      </div>
+
       <Swiper
         navigation={{
           nextEl: ".image-swiper-button-next-Product",
