@@ -1,37 +1,29 @@
 export const MAIN_BREAK_POINTS = {
-  576: {
+  0: {
     slidesPerView: 1,
-    spaceBetween: 30,
-  },
-  990: {
-    slidesPerView: 1,
-    spaceBetween: 30,
-  },
-  1300: {
-    slidesPerView: 1,
-    spaceBetween: 40,
+    spaceBetween: 10,
   },
 }; //화면크기 마다 몇개볼건지? 2,3,4
 
 export const GALAXY_BREAK_POINTS = {
   576: {
     slidesPerView: 2,
-    spaceBetween: 30,
+    spaceBetween: 20,
   },
   990: {
     slidesPerView: 3,
     spaceBetween: 30,
   },
   1300: {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 40,
   },
 }; //화면크기 마다 몇개볼건지? 2,3,4
 
 export const NEW_BREAK_POINTS = {
   576: {
-    slidesPerView: 1,
-    spaceBetween: 30,
+    slidesPerView: 2,
+    spaceBetween: 20,
   },
   990: {
     slidesPerView: 3,

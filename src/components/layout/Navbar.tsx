@@ -15,7 +15,7 @@ const Navbar = () => {
   const onMouseLeave = () => {};
 
   return (
-    <header className="border-b">
+    <header className="fixed top-0 left-0 w-full bg-white shadow z-50 border-b">
       <MenuDesktop
         classNames={classNames}
         setOpen={setOpen}

@@ -3,7 +3,7 @@ import { FaShopify } from "react-icons/fa";
 import {
   footerCompany,
   footerMarketPlace,
-  footerResource,
+  footerSupport,
   footerSocial,
 } from "data/layout/LayoutData";
 
@@ -34,7 +34,7 @@ const Footer = () => {
           <div
             className={"sm:col-span-6 md:col-span-3 lg:col-span-2 lg:ml-auto"}
           >
-            <h6 className={"mb-2 font-medium text-gray-800"}>Market Place</h6>
+            <h6 className={"mb-2 font-medium text-gray-800"}>MARKET PLACE</h6>
             <ul className={"text-sm "}>
               {footerMarketPlace.map(({ name, link }) => (
                 <li className={"mb-2"} key={name}>
@@ -54,9 +54,9 @@ const Footer = () => {
           <div
             className={"sm:col-span-6 md:col-span-3 lg:col-span-2 lg:ml-auto"}
           >
-            <h6 className={"mb-2 font-medium text-gray-800"}>Resources</h6>
+            <h6 className={"mb-2 font-medium text-gray-800"}>SUPPORT</h6>
             <ul className={"text-sm "}>
-              {footerResource.map(({ name, link }) => (
+              {footerSupport.map(({ name, link }) => (
                 <li className={"mb-2"} key={name}>
                   <Link
                     to={link}
@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
 
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2 lg:ml-auto">
-            <h6 className="mb-2 font-medium text-gray-800">Company</h6>
+            <h6 className="mb-2 font-medium text-gray-800">COMPANY</h6>
             <ul className="text-sm">
               {footerCompany.map(({ name, link }) => (
                 <li className="mb-2" key={name}>

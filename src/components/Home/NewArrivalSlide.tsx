@@ -23,7 +23,7 @@ const NewGalaxySlide = () => {
         <Button
           text={"View Details"}
           onClick={() => navigate("/collections")}
-          className="mt-1 w-1/6 max-w-sm border border-gray-300 bg-white py-4 font-semibold text-slate-500 hover:bg-gray-50"
+          className="mt-1 w-1/6 max-w-smborder border-gray-300 bg-white py-4 font-semibold text-slate-500 hover:bg-gray-50"
         />
       </div>
 

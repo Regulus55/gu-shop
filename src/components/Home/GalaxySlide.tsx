@@ -14,7 +14,7 @@ import "swiper/css/pagination";
 
 const GalaxySlide = () => {
   return (
-    <section className={"mx-auto mt-12 w-full max-w-7xl py-4 md:mt-20"}>
+    <section className={"mx-auto my-12 w-full max-w-7xl py-4 md:mt-20"}>
       <div className={"flex items-center justify-between px-6"}>
         <ProductTitle title={"Collect Trending Galaxy Product"} />
         <div className="hidden items-center justify-center sm:flex">
@@ -36,6 +36,7 @@ const GalaxySlide = () => {
         slidesPerView={4}
         breakpoints={GALAXY_BREAK_POINTS}
         modules={[Navigation]}
+        loop={true}
         className="relative overscroll-y-contain !px-6 !pt-6 !pb-2 sm:!pt-10"
       >
         {productData?.map((data) => (

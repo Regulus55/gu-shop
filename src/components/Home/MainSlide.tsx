@@ -7,13 +7,14 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 
 const MainSlider = () => {
   return (
-    <>
+    <section className="bg-slate-100 pb-10">
       <Swiper
         navigation={{
           nextEl: ".main-image-swiper-button-next-Product",
           prevEl: ".main-image-swiper-button-prev-Product",
           disabledClass: "opacity-20",
         }}
+        // breakpoints={MAIN_BREAK_POINTS}
         spaceBetween={30}
         slidesPerView={1}
         pagination={{
@@ -83,7 +84,7 @@ const MainSlider = () => {
           <ChevronRightIcon />
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

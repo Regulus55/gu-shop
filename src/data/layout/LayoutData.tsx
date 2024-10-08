@@ -80,7 +80,7 @@ export const footerMarketPlace = [
   },
 ];
 
-export const footerResource = [
+export const footerSupport = [
   {
     name: "Documentation",
     link: "https://github.com/Regulus55/GU-Shop",

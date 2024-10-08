@@ -34,10 +34,10 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
     ref
   ) => {
     return (
-      <nav className="relative bg-white">
+      <nav className="relative bg-slate-100">
         <div
           aria-label="Top"
-          className="mx-auto max-w-7xl flex justify-between border-gray-200 bg-white px-4 sm:px-6 lg:px-8"
+          className="mx-auto max-w-7xl flex justify-between border-gray-200 bg-slate-100 px-4 sm:px-6 lg:px-8"
         >
           <div className="flex h-16 items-center">
             <button
@@ -50,7 +50,10 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
 
             <div className="ml-4 flex lg:ml-0">
               <Link to="/" className="flex items-center">
-                <FaShopify size="40px" color="#885CF6" className="mr-2" />
+                <FaShopify size="48px" color="#885CF6" className="pb-2" />
+                <span className="text-2xl font-bold text-violet-500 pb-2 tracking-tight">
+                  GUshop
+                </span>
               </Link>
             </div>
 
