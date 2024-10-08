@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper"; // 필요한 모듈 가져오기
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper"; // 필요한 모듈 가져오기
 import "swiper/swiper-bundle.css"; // 스타일 가져오기
 import { MAIN_BREAK_POINTS } from "../../data/Home/SlideOptions";
 import { mainSlidesData } from "data/layout/LayoutData";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 
-const MySlider = () => {
+const MainSlider = () => {
   return (
     <>
       <Swiper
@@ -21,13 +21,17 @@ const MySlider = () => {
           clickable: true,
         }}
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         // spaceBetween={50}
         breakpoints={MAIN_BREAK_POINTS}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
-        //   className="w-full"
+        loop={true}
+        autoplay={{
+          delay: 10000,
+          disableOnInteraction: false,
+        }}
       >
         {mainSlidesData?.map((data) => (
           <SwiperSlide key={data.id}>
@@ -36,7 +40,7 @@ const MySlider = () => {
               style={{
                 backgroundImage: `url(${data.img})`,
                 backgroundPosition: "center",
-                filter: "blur(3px)",
+                filter: "blur(5px) brightness(0.5)",
               }}
             />
 
@@ -81,4 +85,4 @@ const MySlider = () => {
   );
 };
 
-export default MySlider;
+export default MainSlider;
