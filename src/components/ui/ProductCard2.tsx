@@ -11,7 +11,7 @@ interface IProps {
 const ProductCard2 = ({ id, title, img, price }: IProps) => {
   return (
     <Link to={`/product/${id}`}>
-      <div className="relative isolate overflow-hidden  rounded-2xl bg-gray-100 pt-[100%">
+      <div className="relative isolate overflow-hidden  rounded-2xl bg-gray-100 pt-[100%]">
         <div className="absolute inset-0 translate-x-1/2 translate-y-1/2">
           <LazyLoadImage
             src={img}
@@ -25,7 +25,14 @@ const ProductCard2 = ({ id, title, img, price }: IProps) => {
 
       <div className="p-5">
         <h3 className="text-center text-lg font-bold text-gray-900">{title}</h3>
-        <span>{price}</span>
+        <div className="flex items-center justify-center pt-5">
+          <div className="relative rounded-lg border-2 border-violet-500 px-2 py-1">
+            <span className="absolute -top-3 bg-white px-2 text-xs text-violet-400">
+              Price
+            </span>
+            <p className="text-lg font-bold text-violet-500">${price}.00</p>
+          </div>
+        </div>
       </div>
     </Link>
   );

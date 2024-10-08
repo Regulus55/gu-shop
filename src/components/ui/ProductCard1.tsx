@@ -11,7 +11,7 @@ interface IProps {
 const ProductCard1 = ({ id, title, img, price }: IProps) => {
   return (
     <Link to={`/product/${id}`}>
-      <div className="relative isolate overflow-hidden  rounded-2xl bg-gray-100 pt-[100%">
+      <div className="relative isolate overflow-hidden  rounded-2xl bg-gray-100 pt-[100%]">
         <div className="absolute inset-0 translate-x-1/2 translate-y-1/2">
           <LazyLoadImage
             src={img}

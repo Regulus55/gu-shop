@@ -1,7 +1,13 @@
-import React from "react";
+import ProductSlide from "./GalaxySlide";
+import NewArrivalSlide from "./NewArrivalSlide";
 
 const SlideContainer = () => {
-  return <div>SlideContainer</div>;
+  return (
+    <>
+      <ProductSlide />
+      <NewArrivalSlide />
+    </>
+  );
 };
 
 export default SlideContainer;

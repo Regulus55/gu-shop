@@ -37,7 +37,7 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
       <nav className="relative bg-white">
         <div
           aria-label="Top"
-          className="mx-auto max-w-7xl border-gray-200 bg-white px-4 sm:px-6 lg:px-8"
+          className="mx-auto max-w-7xl flex justify-between border-gray-200 bg-white px-4 sm:px-6 lg:px-8"
         >
           <div className="flex h-16 items-center">
             <button
@@ -183,24 +183,25 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
                     New Item
                   </Link>
                 )}
-
-                {/* ////////////////////login//////////// */}
-                <Link
-                  to="/login"
-                  className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                >
-                  Login
-                </Link>
-                {/* ////////////////////signup////////////////// */}
-                <Link
-                  to="/signup"
-                  className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                >
-                  signup
-                </Link>
-                {/* ////////////////////login////////////////// */}
               </div>
             </Popover.Group>
+          </div>
+
+          {/* 오른쪽 회원가입 로그인 */}
+          <div className="space-x-8 flex h-16 items-center">
+            <Link
+              to="/signup"
+              className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+            >
+              signup
+            </Link>
+
+            <Link
+              to="/login"
+              className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+            >
+              Login
+            </Link>
           </div>
         </div>
       </nav>
