@@ -25,8 +25,6 @@ const MainSlider = () => {
         // spaceBetween={50}
         breakpoints={MAIN_BREAK_POINTS}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
         loop={true}
         autoplay={{
           delay: 5000,
@@ -56,7 +54,11 @@ const MainSlider = () => {
                 {data.title}
               </h1>
 
-              <div className="text-white text-xl mb-10 w-1/2 text-center">
+              <div
+                className={
+                  "text-white text-xl mb-10 w-1/2 text-center hidden lg:block"
+                }
+              >
                 {data.description}
               </div>
             </div>
