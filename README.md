@@ -24,9 +24,9 @@ Navbar
 
 슬라이드
 
+![슬라이더깊](https://github.com/user-attachments/assets/a837dbde-44ea-4332-abc5-70a342e8da44)
 ![슬라이드1](https://github.com/user-attachments/assets/b2e75470-8947-4d91-ae4b-503436c31a02)
 
-![슬라이드2](https://github.com/user-attachments/assets/3f7813a8-1049-4aa6-a645-7ffbb119bcc7)
 
 - swiper 를 이용한 슬라이드 기능 구현
 
