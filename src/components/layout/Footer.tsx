@@ -25,8 +25,11 @@ const Footer = () => {
         <div className="grid w-full max-w-7xl gap-8 py-8 px-4 sm:grid-cols-12 sm:px-6 md:py-12">
           <div className="sm:col-span-12 lg:col-span-6">
             <div className="mb-2">
-              <Link className="inline-block flex" aria-label="Cruip" to="/">
-                <FaShopify size="64px" color={"#8B5CF6"} />
+              <Link to="/" className="flex items-center" aria-label="Cruip">
+                <FaShopify size="64px" color="#885CF6" className="pb-2" />
+                <span className="text-3xl font-bold text-violet-500 pb-2 tracking-tight">
+                  GUshop
+                </span>
               </Link>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ItemIntro = () => {
   return (
-    <section className={"mt-16 mb-16 bg-white md:mt-32"}>
+    <section className={"mt-16 mb-32 bg-white md:mt-32"}>
       <div className={"mx-auto max-w-8xl"}>
         <div className={"relative overflow-hidden px-6 lg:px-8"}>
           <div className={"mx-auto max-w-4xl pt-16 sm:pt-20 lg:pt-24"}>

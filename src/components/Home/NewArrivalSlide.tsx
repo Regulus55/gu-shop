@@ -13,17 +13,14 @@ const NewGalaxySlide = () => {
 
   return (
     <section className={"mx-auto mt-12 w-full max-w-7xl py-4 md:mt-20"}>
-      <ProductTitle title={"New Arrivals"} />
+      <ProductTitle title={"New Arrivals"} className="ml-6" />
 
       <div className={"flex items-center justify-between px-6"}>
         <ProductTitle title={"Collect Trending Galaxy Product"} />
-        {/* <div className="hidden items-center justify-center sm:flex">
-          자세히보기
-        </div> */}
         <Button
           text={"View Details"}
           onClick={() => navigate("/collections")}
-          className="mt-1 w-1/6 max-w-smborder border-gray-300 bg-white py-4 font-semibold text-slate-500 hover:bg-gray-50"
+          className="mt-1 w-1/6 max-w-smborder border border-gray-300 bg-white py-4 font-semibold text-slate-500 hover:bg-gray-50"
         />
       </div>
 
