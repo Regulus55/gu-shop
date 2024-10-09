@@ -6,15 +6,17 @@
 
  🔹 기술스택: React, javascript(es6), TypeScript, React-hook-form, Tailwind CSS, @headlessui/react, 
 
-react-lazy-load-image-component, swiper
+   react-lazy-load-image-component, swiper
 
 - 깃허브 URL : https://github.com/Regulus55/GU-shop
+
 
 Navbar
 
 ![네브바](https://github.com/user-attachments/assets/48e7125f-0052-41d7-b1a3-d26e46f7bd8a)
 
 - Headless UI 를 이용한 navbar 구현
+
 
 슬라이드
 
@@ -28,6 +30,8 @@ Navbar
 
 - 메인 이미지 슬라이드 (드래그하여 넘기기, 자동 넘김, 순환 슬라이드)
 
+
+
 반응형UI
 
 ![반응형1](https://github.com/user-attachments/assets/a3735424-7506-4b11-a540-f327c1e03714)
@@ -35,6 +39,8 @@ Navbar
 ![반응형2](https://github.com/user-attachments/assets/0fb2ae94-13e9-4b52-afa7-8bff86ec6ad7)
 
 - 화면 너비에 따른 UI 자동 조정
+
+
 
 ### 추후 추가할 내용
 
