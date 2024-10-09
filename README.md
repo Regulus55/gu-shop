@@ -10,12 +10,16 @@
 
 - 깃허브 URL : https://github.com/Regulus55/GU-shop
 <br/>
+<br/>
+
 
 Navbar
 
 ![네브바](https://github.com/user-attachments/assets/48e7125f-0052-41d7-b1a3-d26e46f7bd8a)
 
 - Headless UI 를 이용한 navbar 구현
+<br/>
+<br/>
 
 
 슬라이드
@@ -29,6 +33,8 @@ Navbar
 ![메인화면](https://github.com/user-attachments/assets/f42792c2-e487-4277-87c8-2e701fd14924)
 
 - 메인 이미지 슬라이드 (드래그하여 넘기기, 자동 넘김, 순환 슬라이드)
+<br/>
+<br/>
 
 
 
@@ -39,7 +45,8 @@ Navbar
 ![반응형2](https://github.com/user-attachments/assets/0fb2ae94-13e9-4b52-afa7-8bff86ec6ad7)
 
 - 화면 너비에 따른 UI 자동 조정
-
+<br/>
+<br/>
 
 
 ### 추후 추가할 내용
