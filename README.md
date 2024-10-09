@@ -7,3 +7,5 @@
 
 https://github.com/user-attachments/assets/fcd8243d-0fcf-41eb-9f52-c022efc49bba111
 
+
+![Uploading 메인슬라이드.gif…]()
