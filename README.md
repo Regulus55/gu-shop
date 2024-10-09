@@ -47,6 +47,11 @@ Navbar
 <br/>
 <br/>
 
+# 시연동영상
+https://github.com/user-attachments/assets/89cf5742-c473-451b-b336-75accf94faa5
+
+<br/>
+<br/>
 
 ### 추후 추가할 내용
 - Navbar 항목 업데이트
