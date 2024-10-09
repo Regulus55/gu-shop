@@ -1,7 +1,7 @@
 
 
 ### 4. Galaxy University Shop
-![메인슬라이드](https://github.com/user-attachments/assets/46d56cc2-7727-4992-8ea4-f67db977f5f7)
+![메인화면](https://github.com/user-attachments/assets/f42792c2-e487-4277-87c8-2e701fd14924)
 ### 대학생을 위한 삼성 갤럭시 제품 전문 판매 사이트 (개인프로젝트)
 
  🔹 기술스택: React, javascript(es6), TypeScript, React-hook-form, Tailwind CSS, @headlessui/react, 
@@ -30,7 +30,7 @@ Navbar
 
 - swiper 를 이용한 슬라이드 기능 구현
 
-![메인화면](https://github.com/user-attachments/assets/f42792c2-e487-4277-87c8-2e701fd14924)
+![메인슬라이드](https://github.com/user-attachments/assets/46d56cc2-7727-4992-8ea4-f67db977f5f7)
 
 - 메인 이미지 슬라이드 (드래그하여 넘기기, 자동 넘김, 순환 슬라이드)
 <br/>
@@ -50,6 +50,5 @@ Navbar
 
 
 ### 추후 추가할 내용
-
 - Navbar 항목 업데이트
 - 결제기능 업데이트
