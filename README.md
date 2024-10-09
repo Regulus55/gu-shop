@@ -40,9 +40,8 @@ Navbar
 
 반응형UI
 
-![반응형1](https://github.com/user-attachments/assets/17e8e0e8-9b77-48a0-8c86-3428baa94eaf)
+![반응형](https://github.com/user-attachments/assets/5fb2129a-61fb-43a9-8ffb-31b42cd98614)
 
-![반응형2](https://github.com/user-attachments/assets/7255cdce-8ce9-40de-bff5-399ccc5c281c)
 
 - 화면 너비에 따른 UI 자동 조정
 <br/>
