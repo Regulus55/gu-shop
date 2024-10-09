@@ -27,15 +27,14 @@ Navbar
 
 ![슬라이더깊](https://github.com/user-attachments/assets/a837dbde-44ea-4332-abc5-70a342e8da44)
 
-<br/>
-<br/>
-
 - swiper 를 이용한 슬라이드 기능 구현
+
+<br/>
 
 ![메인슬라이드](https://github.com/user-attachments/assets/46d56cc2-7727-4992-8ea4-f67db977f5f7)
 
 - 메인 이미지 슬라이드 (드래그하여 넘기기, 자동 넘김, 순환 슬라이드)
-- 
+ 
 <br/>
 <br/>
 
