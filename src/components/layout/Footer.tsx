@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <footer
-      className={`mt-auto border-t border-gray-200 ${
+      className={`mt-auto border-t bg-slate-100 border-gray-200 ${
         location.pathname === "/login" ||
         location.pathname === "/signup" ||
         location.pathname === "/forgot/email" ||

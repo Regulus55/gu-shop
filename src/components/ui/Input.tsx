@@ -36,11 +36,13 @@ const Input = React.forwardRef<HTMLInputElement, IProps>(
   ) => {
     return (
       <>
+        {/* 인풋창이랑 사이즈 딱맞는 바깥박스 */}
         <div
           className={`${error ? "animate-shake" : ""} ${
             className ?? ""
           } relative`}
         >
+          {/* 인풋창 */}
           <input
             ref={ref}
             {...props}
@@ -55,6 +57,8 @@ const Input = React.forwardRef<HTMLInputElement, IProps>(
             autoFocus={autofocus}
             autoComplete={autocomplete}
           />
+
+          {/* placeholder 부분 */}
           <label className={LABEL_CLASS}>{labelText}</label>
           {error && (
             <small

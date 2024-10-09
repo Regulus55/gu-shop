@@ -193,10 +193,17 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
           {/* 오른쪽 회원가입 로그인 */}
           <div className="space-x-8 flex h-16 items-center">
             <Link
+              to="/forgot/password"
+              className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+            >
+              Forgot password
+            </Link>
+
+            <Link
               to="/signup"
               className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
             >
-              signup
+              Signup
             </Link>
 
             <Link

@@ -1,7 +1,8 @@
+import axios from "axios";
 import { AuthimageContainer, Button, Input } from "components/ui";
 import { EMAIL_REGEX } from "data/Auth/authData";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface IProps {
   userName: string;
@@ -11,6 +12,8 @@ interface IProps {
 }
 
 const Signup = () => {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -26,8 +29,28 @@ const Signup = () => {
     },
   });
 
-  const submit = (data: IProps) => {
-    console.log(data);
+  const submit = async (userInput: IProps) => {
+    try {
+      console.log(userInput);
+
+      // 패스워드체크
+      if (userInput.password !== userInput.confirmPassword) {
+        setError("confirmPassword", {
+          type: "manual",
+          message: "Please check your Password again",
+        });
+      }
+
+      // 제출
+      const url = "http://localhost:7070/api/auth/signup";
+      // const { data, status } = await axios.post(url, userInput);
+      // if (status === 200) {
+      //   alert("Signup succeeded");
+      //   // navigate('/login')
+      // }
+    } catch (error) {
+      console.log("signup Error", error);
+    }
   };
 
   return (
@@ -104,6 +127,9 @@ const Signup = () => {
               autocomplete="off"
             />
 
+            {errors.confirmPassword && (
+              <div>{errors.confirmPassword.message}</div>
+            )}
             <Button
               text="Sign up"
               disabled={isSubmitting}
@@ -121,9 +147,9 @@ const Signup = () => {
       </div>
 
       <AuthimageContainer
-        image="/images/isometric-lock-button.png"
-        firstText="shop smarter"
-        secondText="Signup here"
+        image={"/images/simplistic-mobile-login-via-phone-device.png"}
+        firstText="Signup here"
+        secondText=""
       />
     </section>
   );

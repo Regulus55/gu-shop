@@ -1,8 +1,9 @@
+import axios from "axios";
 import { AuthimageContainer, Button, Input } from "components/ui";
 import { EMAIL_REGEX } from "data/Auth/authData";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface IProps {
   email: string;
@@ -10,6 +11,8 @@ interface IProps {
 }
 
 const Login = () => {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -33,8 +36,19 @@ const Login = () => {
     console.log("Kakao login");
   };
 
-  const submit = (data: IProps) => {
-    console.log(data);
+  const submit = async (userInput: IProps) => {
+    try {
+      console.log(userInput);
+
+      const url = "http://localhost:7070/api/auth/login";
+      // const { data, status } = await axios.post(url, userInput);
+      // if(status === 200){
+      //   console.log('Login succeeded')
+      //   Navigate('/profile')
+      // }
+    } catch (error) {
+      console.log("login Error", error);
+    }
   };
 
   return (
@@ -130,8 +144,8 @@ const Login = () => {
 
       <AuthimageContainer
         image="/images/bubble-gum-big-screen-phone.png"
-        firstText="shop smarter"
-        secondText="Login here"
+        firstText="Login here"
+        secondText=""
       />
     </section>
   );

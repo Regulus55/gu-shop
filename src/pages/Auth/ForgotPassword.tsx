@@ -1,14 +1,17 @@
+import axios from "axios";
 import { AuthimageContainer, Button, Input } from "components/ui";
 import { EMAIL_REGEX } from "data/Auth/authData";
 import React from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface IProps {
   email: string;
 }
 
 const ForgotPassword = () => {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -21,8 +24,21 @@ const ForgotPassword = () => {
     },
   });
 
-  const submit = (data: IProps) => {
-    console.log(data);
+  const submit = async (userInput: IProps) => {
+    try {
+      console.log(userInput);
+      // const userInput = {
+      //   userInput.email  submit 오른쪽의 유저인풋 userInput
+      // }
+      // const url = "http://localhost:7070/api/auth/find/password";
+      // const { data, status } = await axios.post(url, userInput.email);
+      // if (status === 201) {
+      //   alert("email has been sent successfully");
+      //   // Navigate('/login')
+      // }
+    } catch (error) {
+      console.log("forgot password Eamil Error", error);
+    }
   };
 
   return (
