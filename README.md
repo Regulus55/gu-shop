@@ -47,7 +47,7 @@ Navbar
 <br/>
 <br/>
 
-시연동영상
+시연영상
 
 https://github.com/user-attachments/assets/89cf5742-c473-451b-b336-75accf94faa5
 
