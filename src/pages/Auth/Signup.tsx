@@ -9,6 +9,16 @@ interface IProps {
   email: string;
   password: string;
   confirmPassword: string;
+
+  // beecouple //
+  nickName: string;
+  consent: {
+    overTwenty: boolean;
+    agreeOfTerm: boolean;
+    agreeOfPersonalInfo: boolean;
+    agreeOfMarketing: boolean;
+    etc: boolean;
+  };
 }
 
 const Signup = () => {
@@ -26,12 +36,37 @@ const Signup = () => {
       email: "",
       password: "",
       confirmPassword: "",
+      // beecouple //
+      // nickName: "",
+      // consent: {
+      //   overTwenty: true,
+      //   agreeOfTerm: true,
+      //   agreeOfPersonalInfo: true,
+      //   agreeOfMarketing: false,
+      //   etc: false,
+      // },
     },
   });
 
   const submit = async (userInput: IProps) => {
     try {
-      console.log(userInput);
+      console.log("userInput", userInput);
+
+      const userData = {
+        userName: userInput.userName,
+        email: userInput.email,
+        password: userInput.password,
+        // beecouple //
+        nickName: userInput.userName,
+        consent: {
+          overTwenty: true,
+          agreeOfTerm: true,
+          agreeOfPersonalInfo: true,
+          agreeOfMarketing: false,
+          etc: false,
+        },
+      };
+      console.log("userData", userData);
 
       // 패스워드체크
       if (userInput.password !== userInput.confirmPassword) {
@@ -43,7 +78,7 @@ const Signup = () => {
 
       // 제출
       const url = "http://localhost:7070/api/auth/signup";
-      // const { data, status } = await axios.post(url, userInput);
+      // const { data, status } = await axios.post(url, userData);
       // if (status === 200) {
       //   alert("Signup succeeded");
       //   // navigate('/login')
