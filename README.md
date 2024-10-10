@@ -7,8 +7,6 @@
  🔹 기술스택: React, javascript(es6), TypeScript, React-hook-form, Tailwind CSS, @headlessui/react, 
 
    react-lazy-load-image-component, swiper
-
-- 깃허브 URL : https://github.com/Regulus55/GU-shop
 <br/>
 <br/>
 
@@ -55,5 +53,6 @@ https://github.com/user-attachments/assets/89cf5742-c473-451b-b336-75accf94faa5
 <br/>
 
 ### 추후 추가할 내용
-- Navbar 항목 업데이트
-- 결제기능 업데이트
+- Navbar 항목 추가
+- 상세 페이지 추가
+- 결제기능 업데이트 등
