@@ -1,6 +1,6 @@
 
 
-### 4. Galaxy University Shop
+### Galaxy University Shop
 ![메인화면](https://github.com/user-attachments/assets/f42792c2-e487-4277-87c8-2e701fd14924)
 ### 대학생을 위한 삼성 갤럭시 제품 전문 판매 사이트 (개인프로젝트)
 
@@ -47,7 +47,7 @@ Navbar
 <br/>
 <br/>
 
-시연영상
+데모영상
 
 https://github.com/user-attachments/assets/89cf5742-c473-451b-b336-75accf94faa5
 
