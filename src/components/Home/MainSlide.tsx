@@ -7,7 +7,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 
 const MainSlider = () => {
   return (
-    <section className="bg-slate-100 pb-10">
+    <section className="bg-slate-100 pb-10 mt-16">
       <Swiper
         navigation={{
           nextEl: ".main-image-swiper-button-next-Product",
@@ -35,7 +35,7 @@ const MainSlider = () => {
         {mainSlidesData?.map((data) => (
           <SwiperSlide key={data.id}>
             <div
-              className="w-full h-[750px] bg-cover bg-no-repeat bg-center"
+              className="w-full h-[700px] bg-cover bg-no-repeat bg-center"
               style={{
                 backgroundImage: `url(${data.img})`,
                 backgroundPosition: "center",

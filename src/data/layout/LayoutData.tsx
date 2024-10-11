@@ -56,8 +56,8 @@ export const headerData = {
     },
   ],
   pages: [
-    { name: "Shop All", href: "/collections/shop-all-sssss" },
-    { name: "New Arrival", href: "/collections/new-AAArival" },
+    { name: "Shop All", href: "/collections/shop-all" },
+    { name: "New Arrival", href: "/collections/new-arrival" },
   ],
 };
 
