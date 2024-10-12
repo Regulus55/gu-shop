@@ -1,46 +1,58 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Galaxy University Shop
+![메인화면](https://github.com/user-attachments/assets/f42792c2-e487-4277-87c8-2e701fd14924)
+### 대학생을 위한 삼성 갤럭시 제품 전문 판매 사이트 (개인프로젝트)
 
-In the project directory, you can run:
+ 🔹 기술스택: React, javascript(es6), TypeScript, React-hook-form, Tailwind CSS, @headlessui/react, 
 
-### `npm start`
+   react-lazy-load-image-component, swiper
+<br/>
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Navbar
 
-### `npm test`
+![네브바](https://github.com/user-attachments/assets/48e7125f-0052-41d7-b1a3-d26e46f7bd8a)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Headless UI 를 이용한 navbar 구현
+<br/>
+<br/>
 
-### `npm run build`
+슬라이드
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![슬라이드1](https://github.com/user-attachments/assets/b2e75470-8947-4d91-ae4b-503436c31a02)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![슬라이더깊](https://github.com/user-attachments/assets/a837dbde-44ea-4332-abc5-70a342e8da44)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- swiper 를 이용한 슬라이드 기능 구현
 
-### `npm run eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![메인슬라이드](https://github.com/user-attachments/assets/46d56cc2-7727-4992-8ea4-f67db977f5f7)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 메인 이미지 슬라이드 (드래그하여 넘기기, 자동 넘김, 순환 슬라이드)
+ 
+<br/>
+<br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+반응형UI
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![반응형](https://github.com/user-attachments/assets/5fb2129a-61fb-43a9-8ffb-31b42cd98614)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 화면 너비에 따른 UI 자동 조정
+<br/>
+<br/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+데모영상
+
+https://github.com/user-attachments/assets/89cf5742-c473-451b-b336-75accf94faa5
+
+<br/>
+<br/>
+
+### 추후 추가할 내용
+- Navbar 항목 추가
+- 상세 페이지 추가
+- 결제기능 업데이트 등
