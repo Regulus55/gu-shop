@@ -31,23 +31,21 @@ export const headerData = {
             { name: "Fold series", href: "/collections/galaxy-fold" },
           ],
         },
-
         {
-          id: "laptop",
-          name: "Laptop",
-          href: "/collections/laptop",
+          id: "computer",
+          name: "Computer",
+          href: "/collections/computer",
           items: [
             { name: "Book series", href: "/collections/galaxy-book" },
             { name: "Tab series", href: "/collections/galaxy-tab" },
           ],
         },
-
         {
           id: "accessory",
           name: "Accessory",
           href: "/collections/accessory",
           items: [
-            { mame: "Watch series", href: "/collections/galaxy-watch" },
+            { name: "Watch series", href: "/collections/galaxy-watch" },
             { name: "Buzz series", href: "/collections/galaxy-buzz" },
             { name: "Ring", href: "/collections/galaxy-ring" },
           ],
@@ -56,7 +54,7 @@ export const headerData = {
     },
   ],
   pages: [
-    { name: "Shop All", href: "/collections/shop-all" },
+    { name: "Shop All", href: "/collections" },
     { name: "New Arrival", href: "/collections/new-arrival" },
   ],
 };

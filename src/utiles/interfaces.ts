@@ -2,20 +2,22 @@
 export interface FilterPropsType {
   isLoading?: boolean;
   allCategories: string[];
-  // filters: filterType[];
+  filters: filterType[];
   colors: string[];
   sizes: string[];
   setSortParams: (key: string, value: string) => void;
   deleteSortParams: (key: string) => void;
   searchParams: URLSearchParams;
-  paegData?: string;
+  pageData?: string;
 }
 
 interface filterType {
   name: string;
 }
 
-// export interface FilterProps {
-//     setSortParams: (key: string, value:string) => void;
-//     delete
-// }
+export interface FilterProps {
+  setSortParams: (key: string, value: string) => void;
+  deleteSortParams: (key: string) => void;
+  params: string | null;
+  searchParams: URLSearchParams;
+}

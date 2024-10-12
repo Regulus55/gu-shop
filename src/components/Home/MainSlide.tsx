@@ -7,7 +7,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 
 const MainSlider = () => {
   return (
-    <section className="bg-slate-100 pb-10 mt-16">
+    <section className="bg-slate-100 pb-10">
       <Swiper
         navigation={{
           nextEl: ".main-image-swiper-button-next-Product",

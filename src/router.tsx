@@ -1,6 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import { Home, Login, NotFound, Signup } from "./pages";
+import {
+  AdminPage,
+  Collections,
+  Home,
+  Login,
+  NotFound,
+  ProductDetail,
+  Signup,
+} from "./pages";
 import ForgotEmail from "pages/Auth/ForgotEmail";
 import ForgotPassword from "pages/Auth/ForgotPassword";
 
@@ -30,6 +38,18 @@ const router = createBrowserRouter([
       {
         path: "/forgot/password",
         element: <ForgotPassword />,
+      },
+      {
+        path: "/product/new",
+        element: <AdminPage />,
+      },
+      {
+        path: "/collections",
+        element: <Collections />,
+      },
+      {
+        path: "/product/:id",
+        element: <ProductDetail />,
       },
     ],
   },
