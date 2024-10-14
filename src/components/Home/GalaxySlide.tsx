@@ -14,7 +14,7 @@ import "swiper/css/pagination";
 
 const GalaxySlide = () => {
   return (
-    <section className={"mx-auto my-12 w-full max-w-7xl py-4 md:mt-20"}>
+    <section className={"mx-auto my-12 w-full max-w-7xl mb-24 py-4 md:mt-20"}>
       <div className={"flex items-center justify-between px-6"}>
         <ProductTitle title={"Collect Trending Galaxy Product"} />
         <div className="hidden items-center justify-center sm:flex">
