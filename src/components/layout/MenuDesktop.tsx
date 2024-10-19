@@ -1,6 +1,6 @@
 import { Dispatch, forwardRef, Fragment, SetStateAction } from "react";
 import { Link, NavigateFunction } from "react-router-dom";
-import { Bars3Icon } from "@heroicons/react/16/solid";
+import { Bars3Icon, ShoppingBagIcon } from "@heroicons/react/16/solid";
 import { FaShopify } from "react-icons/fa";
 import { Popover, Transition } from "@headlessui/react";
 import { headerData } from "data/layout/LayoutData";
@@ -37,7 +37,7 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
       <nav className="relative bg-slate-100">
         <div
           aria-label="Top"
-          className="mx-auto max-w-7xl flex justify-between border-gray-200 bg-slate-100 px-4 sm:px-6 lg:px-8"
+          className="mx-auto max-w-7xl border-gray-200 bg-slate-100 px-4 sm:px-6 lg:px-8"
         >
           <div className="flex h-16 items-center">
             <button
@@ -178,40 +178,70 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
                     {page.name}
                   </Link>
                 ))}
+
                 {isAdmin && (
                   <Link
-                    to="/product/new"
-                    className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                    to={"/Product/new"}
+                    className={
+                      "flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                    }
                   >
                     New Item
                   </Link>
                 )}
               </div>
             </Popover.Group>
-          </div>
 
-          {/* 오른쪽 회원가입 로그인 */}
-          <div className="space-x-8 h-16 items-center hidden md:flex">
-            <Link
-              to="/forgot/password"
-              className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-            >
-              Forgot password
-            </Link>
+            <div className={"ml-auto flex items-center"}>
+              <div
+                className={
+                  "hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6"
+                }
+              >
+                <div
+                  className={
+                    "hidden items-center justify-end md:flex md:flex-1"
+                  }
+                ></div>
+              </div>
+            </div>
 
-            <Link
-              to="/signup"
-              className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-            >
-              Signup
-            </Link>
+            <div>
+              <Link
+                to="/login"
+                className="text-sm font-medium text-gray-700 hover:text-gray-800"
+              >
+                Login{" "}
+              </Link>
+              <span className="h-6 w-px bg-gray-200 mr-4" aria-hidden="true" />
+              <Link
+                to="/signup"
+                className="text-sm font-medium text-gray-700 hover:text-gray-800"
+              >
+                Sign Up
+              </Link>
+            </div>
 
-            <Link
-              to="/login"
-              className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-            >
-              Login
-            </Link>
+            <div className="hidden lg:ml-8 lg:flex">
+              <img
+                src="/images/canada.png"
+                alt=""
+                className="block h-auto w-5 shrink-0"
+              />
+              <span className="ml-3 block text-sm font-medium text-gray-800">
+                CAD
+              </span>
+            </div>
+            {/* Cart */}
+            <div className="ml-4 flow-root lg:ml-6">
+              <Link to="/carts" className="group -m-2 flex items-center p-2">
+                <ShoppingBagIcon
+                  className="h-6 w-6 shrink-0 text-gray-400 group-hover:text-gray-500"
+                  aria-hidden="true"
+                />
+                {/*<CartStatus/>*/}
+              </Link>
+            </div>
           </div>
         </div>
       </nav>

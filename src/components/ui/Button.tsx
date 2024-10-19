@@ -6,6 +6,7 @@ interface ButtonProps {
   disabled?: boolean;
   className?: string;
   icon?: IconType;
+  type?: "button" | "submit";
 }
 type IconType = () => JSX.Element;
 

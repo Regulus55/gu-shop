@@ -73,6 +73,8 @@ const ForgotEmail = () => {
         image={"/images/forgotemail.svg"}
         firstText="Find your email"
         secondText=""
+        width={300}
+        height={300}
       />
     </section>
   );

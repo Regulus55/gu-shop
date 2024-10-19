@@ -4,9 +4,17 @@ interface IProps {
   image: string;
   firstText: string;
   secondText: string;
+  width?: number;
+  height?: number;
 }
 
-const AuthimageContainer = ({ image, firstText, secondText }: IProps) => {
+const AuthimageContainer = ({
+  image,
+  firstText,
+  secondText,
+  width,
+  height,
+}: IProps) => {
   return (
     <div className="col-span-6 hidden h-full w-full items-center bg-slate-50 p-4 lg:flex">
       <div className="flex h-full w-full flex-col items-center justify-center">
@@ -16,8 +24,8 @@ const AuthimageContainer = ({ image, firstText, secondText }: IProps) => {
         </h1>
         <LazyLoadImage
           src={image}
-          width={300}
-          height={200}
+          width={width}
+          height={height}
           alt="Image Alt"
           // className="-mt-16"
         />

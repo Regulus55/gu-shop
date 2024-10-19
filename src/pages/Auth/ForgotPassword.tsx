@@ -24,20 +24,16 @@ const ForgotPassword = () => {
     },
   });
 
-  const submit = async (userInput: IProps) => {
+  const submit = async (data: IProps) => {
+    console.log(data);
     try {
-      console.log(userInput);
-      // const userInput = {
-      //   userInput.email  submit 오른쪽의 유저인풋 userInput
-      // }
-      // const url = "http://localhost:7070/api/auth/find/password";
-      // const { data, status } = await axios.post(url, userInput.email);
-      // if (status === 201) {
-      //   alert("email has been sent successfully");
-      //   // Navigate('/login')
-      // }
-    } catch (error) {
-      console.log("forgot password Eamil Error", error);
+      const url = "http://localhost:8000/api/auth/find/password";
+      const { status } = await axios.post(url, data);
+      if (status === 201) {
+        alert("email sent successfully");
+      }
+    } catch (e) {
+      console.log("forgot password Eamil Error", e);
     }
   };
 
@@ -91,8 +87,10 @@ const ForgotPassword = () => {
 
       <AuthimageContainer
         image={"/images/lucent-login-and-password-folder.png"}
-        firstText="Find your password"
-        secondText=""
+        firstText="Start your password recovery"
+        secondText="We'll help you get back in"
+        width={300}
+        height={300}
       />
     </section>
   );

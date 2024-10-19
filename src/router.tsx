@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import {
   AdminPage,
+  ChangePassword,
   Collections,
   Home,
   Login,
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/forgot/password",
         element: <ForgotPassword />,
+      },
+      {
+        path: "/change/password",
+        element: <ChangePassword />,
       },
       {
         path: "/product/new",

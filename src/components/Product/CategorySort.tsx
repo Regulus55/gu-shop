@@ -49,7 +49,7 @@ const CategorySort = ({
         name = "Price: High to Low";
         break;
       default:
-        name: "Relevance";
+        name = "Relevance";
         break;
     }
     setActiveButton(name);

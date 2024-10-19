@@ -36,18 +36,17 @@ const Login = () => {
     console.log("Kakao login");
   };
 
-  const submit = async (userInput: IProps) => {
+  const submit = async (data: IProps) => {
+    console.log(data);
     try {
-      console.log(userInput);
-
-      const url = "http://localhost:7070/api/auth/login";
-      // const { data, status } = await axios.post(url, userInput);
-      // if(status === 200){
-      //   console.log('Login succeeded')
-      //   Navigate('/profile')
-      // }
-    } catch (error) {
-      console.log("login Error", error);
+      const url = "http://localhost:8000/api/auth/login";
+      const { status } = await axios.post(url, data);
+      if (status === 200) {
+        alert("login success");
+        navigate("/");
+      }
+    } catch (e) {
+      console.log("login Error", e);
     }
   };
 
@@ -133,19 +132,31 @@ const Login = () => {
             className="mt-2 w-full max-w-sm rounded-lg border border-gray-300 bg-white py-4 font-semibold test-slate-500 hover:bg-gray-50"
           />
 
-          <div className="mt-8 text-slate-500">
+          <div className="mt-8 mb-1 text-slate-500">
             Don't have an account?
             <Link to="/signup" className="p-2 font-semibold text-violet-500">
               Sign up
+            </Link>
+          </div>
+
+          <div className="text-slate-500">
+            Forgot your Password?
+            <Link
+              to={"/forgot/password"}
+              className="p-2 font-semibold text-violet-500"
+            >
+              Find My Password
             </Link>
           </div>
         </div>
       </div>
 
       <AuthimageContainer
-        image="/images/bubble-gum-big-screen-phone.png"
-        firstText="Login here"
-        secondText=""
+        image="/images/femail.webp"
+        firstText="shop smarter"
+        secondText="Login here"
+        width={350}
+        height={350}
       />
     </section>
   );
