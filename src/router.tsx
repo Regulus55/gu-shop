@@ -1,17 +1,22 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import {
-  AdminPage,
-  ChangePassword,
+  AdminAdd,
+  AdminEdit,
+  AdminList,
+  AllProducts,
   Collections,
+  ForgotEmail,
+  ForgotPassword,
+  ChangePassword,
+  Profile,
+  EditProfile,
   Home,
   Login,
   NotFound,
   ProductDetail,
   Signup,
 } from "./pages";
-import ForgotEmail from "pages/Auth/ForgotEmail";
-import ForgotPassword from "pages/Auth/ForgotPassword";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +38,14 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
+        path: "/profile",
+        element: <Profile />,
+      },
+      {
+        path: "/edit/profile",
+        element: <EditProfile />,
+      },
+      {
         path: "/forgot/email",
         element: <ForgotEmail />,
       },
@@ -41,20 +54,36 @@ const router = createBrowserRouter([
         element: <ForgotPassword />,
       },
       {
-        path: "/change/password",
-        element: <ChangePassword />,
+        path: "/products",
+        element: <AllProducts />,
+      },
+      {
+        path: "/products/:id",
+        element: <ProductDetail />,
       },
       {
         path: "/product/new",
-        element: <AdminPage />,
+        element: <AdminList />,
+      },
+      {
+        path: "/product/add",
+        element: <AdminAdd />,
+      },
+      {
+        path: "/product/edit/:id",
+        element: <AdminEdit />,
       },
       {
         path: "/collections",
         element: <Collections />,
       },
       {
-        path: "/product/:id",
-        element: <ProductDetail />,
+        path: "/allproducts",
+        element: <AllProducts />,
+      },
+      {
+        path: "/change/password",
+        element: <ChangePassword />,
       },
     ],
   },

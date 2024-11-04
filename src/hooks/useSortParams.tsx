@@ -1,5 +1,5 @@
-import queryString from "query-string";
 import { useSearchParams } from "react-router-dom";
+import queryString from "query-string";
 
 export default function useSortParams() {
   const [searchParams, setSearchParams] = useSearchParams();

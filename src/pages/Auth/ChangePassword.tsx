@@ -1,4 +1,4 @@
-import { AuthimageContainer, Button, Input } from "components/ui";
+import { AuthImageContainer, Button, Input } from "components/ui";
 import { EMAIL_REGEX } from "data/Auth/authData";
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
@@ -119,12 +119,10 @@ const ChangePassword = () => {
         </div>
       </div>
 
-      <AuthimageContainer
-        image="/images/isometric-lock-button.webp"
+      <AuthImageContainer
+        image={"/images/register.webp"}
         firstText="Find your password"
         secondText="Make your new Password"
-        width={200}
-        height={200}
       />
     </section>
   );

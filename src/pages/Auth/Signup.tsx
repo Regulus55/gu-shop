@@ -1,11 +1,11 @@
-import { AuthimageContainer, Button, Input } from "components/ui";
+import { AuthImageContainer, Button, Input } from "components/ui";
 import { EMAIL_REGEX } from "data/Auth/authData";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
+import Checkbox from "../../components/ui/Checkbox";
 import axios from "axios";
 import { useState } from "react";
-import LoadingSppiner from "components/layout/LoadingSppiner";
-import Checkbox from "components/ui/Checkbox";
+import LoadingSppiner from "../../components/layout/LoadingSppiner";
 
 interface IProps {
   username: string;
@@ -58,7 +58,6 @@ const Signup = () => {
     const userInput = {
       email: data.email,
     };
-    setIsSentEmail(true);
     try {
       const url = "http://localhost:8000/api/auth/email/send";
       const { status } = await axios.post(url, userInput);
@@ -78,7 +77,6 @@ const Signup = () => {
       email: data.email,
       code: data.code,
     };
-    setIsCheckedEmail(true);
     try {
       const url = "http://localhost:8000/api/auth/email/check";
       const { status } = await axios.post(url, userInput);
@@ -115,6 +113,7 @@ const Signup = () => {
   };
 
   // consent 선택 부분
+
   const agreements = [
     {
       id: 1,
@@ -384,7 +383,7 @@ const Signup = () => {
                       role="alert"
                       className={`animate-shake text-red-500`}
                     >
-                      Please check the essential consent
+                      check please
                     </small>
                   )}
 
@@ -409,13 +408,10 @@ const Signup = () => {
               </div>
             </div>
           </div>
-
-          <AuthimageContainer
-            image={"/images/bubble-gum-big-screen-phone.webp"}
+          <AuthImageContainer
+            image={"/images/register.webp"}
             firstText="Create your Account"
             secondText="Signup here"
-            width={250}
-            height={250}
           />
         </>
       )}

@@ -1,4 +1,4 @@
-import { AuthimageContainer, Button, Input } from "components/ui";
+import { AuthImageContainer, Button, Input } from "components/ui";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
@@ -69,12 +69,10 @@ const ForgotEmail = () => {
         </div>
       </div>
 
-      <AuthimageContainer
-        image={"/images/forgotemail.svg"}
+      <AuthImageContainer
+        image={"/images/login.webp"}
         firstText="Find your email"
         secondText=""
-        width={300}
-        height={300}
       />
     </section>
   );
