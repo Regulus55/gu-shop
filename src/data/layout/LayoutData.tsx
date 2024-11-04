@@ -7,7 +7,7 @@ export const headerData = {
       featured: [
         {
           name: "New Arrivals",
-          href: "/collection/new-arrivals",
+          href: "/allproducts",
           imageSrc: "/images/book4u.png",
           imageAlt: "Galaxy Book 4 Ultra",
         },
@@ -25,7 +25,7 @@ export const headerData = {
           name: "SmartPhone",
           href: "/collections/smartphone",
           items: [
-            { name: "A series", href: "/collections/galaxt-a" },
+            { name: "A series", href: "/collections/galaxy-a" },
             { name: "S series", href: "/collections/galaxy-s" },
             { name: "Flip series", href: "/collections/galaxy-flip" },
             { name: "Fold series", href: "/collections/galaxy-fold" },
@@ -55,7 +55,7 @@ export const headerData = {
   ],
   pages: [
     { name: "Shop All", href: "/collections" },
-    { name: "New Arrival", href: "/collections/new-arrival" },
+    { name: "New Arrival", href: "/allproducts" },
   ],
 };
 

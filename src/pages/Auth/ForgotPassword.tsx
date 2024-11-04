@@ -86,9 +86,11 @@ const ForgotPassword = () => {
       </div>
 
       <AuthImageContainer
-        image={"/images/register.webp"}
+        image={"/images/fpassword.webp"}
         firstText="Start your password recovery"
         secondText="We'll help you get back in"
+        width={300}
+        height={300}
       />
     </section>
   );

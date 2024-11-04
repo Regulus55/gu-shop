@@ -70,9 +70,11 @@ const ForgotEmail = () => {
       </div>
 
       <AuthImageContainer
-        image={"/images/login.webp"}
-        firstText="Find your email"
-        secondText=""
+        image={"/images/forgotemail.webp"}
+        firstText="Start your password recovery"
+        secondText="We'll help you get back in"
+        width={500}
+        height={500}
       />
     </section>
   );

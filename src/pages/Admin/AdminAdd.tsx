@@ -30,7 +30,6 @@ interface AdminProps {
 }
 
 const AdminAdd = () => {
-  const params = useParams();
   const token = localStorage.getItem("token");
   const navigate = useNavigate();
   const {
@@ -44,8 +43,12 @@ const AdminAdd = () => {
 
   // Category
   const getCategoryData = async () => {
-    const { data } = await axios.get("http://localhost:8000/api/category");
-    setCategoryInfo(data.body);
+    try {
+      const { data } = await axios.get("http://localhost:8000/api/category");
+      setCategoryInfo(data.body);
+    } catch (e) {
+      console.log(e);
+    }
   };
   const [categoryInfo, setCategoryInfo] = useState<CategoryType[]>([]);
   const categorySample: { [key: string]: string[] } = {

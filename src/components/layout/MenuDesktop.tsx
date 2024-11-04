@@ -57,6 +57,8 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
               </Link>
             </div>
 
+            <Link to={"/profile"}>프로파일</Link>
+
             <Popover.Group className="z-50 hidden lg:ml-8 lg:block lg:self-stretch">
               <div className="flex h-full space-x-8">
                 {headerData.categories.map((category) => (
@@ -222,16 +224,6 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
               </Link>
             </div>
 
-            <div className="hidden lg:ml-8 lg:flex">
-              <img
-                src="/images/canada.png"
-                alt=""
-                className="block h-auto w-5 shrink-0"
-              />
-              <span className="ml-3 block text-sm font-medium text-gray-800">
-                CAD
-              </span>
-            </div>
             {/* Cart */}
             <div className="ml-4 flow-root lg:ml-6">
               <Link to="/carts" className="group -m-2 flex items-center p-2">

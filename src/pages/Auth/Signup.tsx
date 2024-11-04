@@ -409,9 +409,11 @@ const Signup = () => {
             </div>
           </div>
           <AuthImageContainer
-            image={"/images/register.webp"}
+            image={"/images/signup.webp"}
             firstText="Create your Account"
             secondText="Signup here"
+            width={300}
+            height={300}
           />
         </>
       )}

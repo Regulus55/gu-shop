@@ -120,7 +120,7 @@ const ChangePassword = () => {
       </div>
 
       <AuthImageContainer
-        image={"/images/register.webp"}
+        image={"/images/chpassword.webp"}
         firstText="Find your password"
         secondText="Make your new Password"
       />

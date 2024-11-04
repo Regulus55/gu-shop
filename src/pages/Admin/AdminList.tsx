@@ -53,9 +53,13 @@ const AdminList = ({
     ...accessory.ring,
   ]);
   const getItemData = async () => {
-    const url = "http://localhost:8000/api/product?order=ASC&page=1&take=20";
-    const { data } = await axios.get(url);
-    setProductData(data.body.data);
+    try {
+      const url = "http://localhost:8000/api/product?order=ASC&page=1&take=20";
+      const { data } = await axios.get(url);
+      setProductData(data.body.data);
+    } catch (e) {
+      console.log(e);
+    }
   };
   const [productData, setProductData] = useState<any>([]);
 
