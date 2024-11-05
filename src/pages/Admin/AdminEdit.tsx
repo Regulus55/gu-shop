@@ -373,9 +373,8 @@ const AdminEdit = () => {
               <input
                 className="h-12 w-full border-2 border-gray-300 rounded-lg"
                 {...register("promotionalPrice")}
-                placeholder={`₩ ${String(
-                  productData?.price?.toLocaleString()
-                )}`}
+                placeholder={`₩ ${Math.floor(productData?.price as number).toLocaleString()}`}
+
               />
             </div>
           </div>

@@ -54,7 +54,8 @@ const AdminList = ({
   ]);
   const getItemData = async () => {
     try {
-      const url = "http://localhost:8000/api/product?order=ASC&page=1&take=20";
+      // const url = "http://localhost:8000/api/product?order=ASC&page=1&take=20";
+      const url = "http://localhost:8000/api/product?order=DESC&page=1&take=10"
       const { data } = await axios.get(url);
       setProductData(data.body.data);
     } catch (e) {

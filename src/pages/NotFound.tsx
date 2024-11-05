@@ -10,8 +10,8 @@ const NotFound = () => {
         image={"/images/chpassword.webp"}
         firstText="Page not found"
         secondText="Please go back to the previous page"
-        width={500}
-        height={500}
+        width={300}
+        height={300}
       />
     </div>
   );
