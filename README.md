@@ -93,10 +93,38 @@ Navbar
 <br/>
 <br/>
 
-![adminlist1](https://github.com/user-attachments/assets/ef641329-1f06-4dc1-bb6a-faefb53fa489)
+![allproduct](https://github.com/user-attachments/assets/24f41495-2c20-496e-9233-eeba636db8b4)
+
+- Shop All page 의 제품 리스트
+
+<br/>
+<br/>
+
+![allproducts](https://github.com/user-attachments/assets/a8fdd10e-20da-4b96-8309-69e8c07943b5)
+
+- 한번에 볼 아이템 갯수 정하기
+
+<br/>
+
+![allproducts2](https://github.com/user-attachments/assets/25c0b67c-2fcd-42d4-b549-3e30fac15438)
+
+- 페이지네이션 구현
+
+<br/>
+
+![allproducts3](https://github.com/user-attachments/assets/01d236e9-77c3-41dd-8dd8-f303581b383e)
+
+- 아이템 필터기능 구현 ( 기본, 낮은가격순, 높은가격순 )
+
+<br/>
+<br/>
+
+![adminlist](https://github.com/user-attachments/assets/a0ce9b44-ef27-4991-99e8-30874009d5d5)
 
 - admin page 의 제품 리스트
-- 
+
+ <br/>
+ 
 ![adminadd](https://github.com/user-attachments/assets/649bfafb-7dd2-4028-a28d-d1a4b96f1ea8)
 
 ![adminedit](https://github.com/user-attachments/assets/ce3cda98-8e1c-4e53-b0fb-ae231a9c15fd)
