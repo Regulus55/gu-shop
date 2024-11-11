@@ -123,6 +123,7 @@ const ChangePassword = () => {
         image={"/images/chpassword.webp"}
         firstText="Find your password"
         secondText="Make your new Password"
+        className={'-mt-12'}
       />
     </section>
   );

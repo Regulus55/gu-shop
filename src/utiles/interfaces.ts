@@ -25,7 +25,7 @@ export interface FilterProps {
 // prodcts
 export interface ProductType {
   title: string; // Galaxy Flip6
-  name?: string;
+  name?: string,
   model: string; // IJSF23-FAIONSD
   price?: number;
   referencePrice: number; // 130000
@@ -41,6 +41,7 @@ export interface ProductType {
   // options?: string;
   id: number; // 1
   image: string[]; // ["aa","bb","cc"]
+  productImgs?: string[];
   // details?: string;
   highlights: string[]; // ["aza","bbb","ccc"]
   inventory: number; // 152

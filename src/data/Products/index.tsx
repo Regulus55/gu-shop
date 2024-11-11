@@ -7,7 +7,7 @@ export const FILTERS = [
   },
 ];
 
-export const COLLECTION = ["SmartPhone", "computer", "Accessories"];
+export const COLLECTION = ["Smartphone", "computer", "Accessories"];
 
 interface Category {
   type: string;

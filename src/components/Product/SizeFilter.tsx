@@ -28,7 +28,7 @@ const SizeFilter = ({
     setActiveButton(params ?? "");
   }, [searchParams]);
 
-  return <div>s</div>;
+  return <div></div>;
 };
 
 export default SizeFilter;

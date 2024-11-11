@@ -163,8 +163,8 @@ const Login = () => {
         image={"/images/login.webp"}
         firstText="shop smarter"
         secondText="Login here"
-        width={300}
-        height={300}
+        width={250}
+        height={250}
       />
     </section>
   );

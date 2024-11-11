@@ -54,10 +54,6 @@ const router = createBrowserRouter([
         element: <ForgotPassword />,
       },
       {
-        path: "/products",
-        element: <AllProducts />,
-      },
-      {
         path: "/products/:id",
         element: <ProductDetail />,
       },

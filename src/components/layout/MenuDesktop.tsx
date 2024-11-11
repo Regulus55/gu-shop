@@ -55,6 +55,7 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
                 localStorage.removeItem('token')
                 setIsLoggedIn(false)
                 if (result.status === 201) {
+                    window.location.reload()
                     alert('Logout succeeded')
                 }
             } catch (e) {

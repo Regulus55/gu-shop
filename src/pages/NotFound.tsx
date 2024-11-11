@@ -7,7 +7,7 @@ const NotFound = () => {
       style={{ background: "#F8FAFC" }}
     >
       <AuthImageContainer
-        image={"/images/chpassword.webp"}
+        image={"/images/notfound.png"}
         firstText="Page not found"
         secondText="Please go back to the previous page"
         width={300}

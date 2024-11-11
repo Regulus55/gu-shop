@@ -412,8 +412,8 @@ const Signup = () => {
             image={"/images/signup.webp"}
             firstText="Create your Account"
             secondText="Signup here"
-            width={300}
-            height={300}
+            width={250}
+            height={250}
           />
         </>
       )}
