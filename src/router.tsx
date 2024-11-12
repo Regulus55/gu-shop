@@ -16,6 +16,7 @@ import {
   NotFound,
   ProductDetail,
   Signup,
+  Carts,
 } from "./pages";
 
 const router = createBrowserRouter([
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
         element: <ForgotPassword />,
       },
       {
+        path: "/change/password",
+        element: <ChangePassword />,
+      },
+      {
         path: "/products/:id",
         element: <ProductDetail />,
       },
@@ -78,8 +83,8 @@ const router = createBrowserRouter([
         element: <AllProducts />,
       },
       {
-        path: "/change/password",
-        element: <ChangePassword />,
+        path: "/carts",
+        element: <Carts />,
       },
     ],
   },

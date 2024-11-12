@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import ProductTitle from "../components/ui/ProductTitle";
+import ProductTitle from "../../components/ui/ProductTitle";
 import { Menu } from "@headlessui/react";
 import { ChevronDownIcon, FunnelIcon } from "@heroicons/react/16/solid";
-import CategorySort from "../components/Product/CategorySort";
-import useSortParams from "../hooks/useSortParams";
-import FilterDesktop from "../components/Product/FilterDesktop";
-import { COLLECTION, FILTERS } from "../data/Products";
-import { ProductType } from "../utiles/interfaces";
+import CategorySort from "../../components/Product/CategorySort";
+import useSortParams from "../../hooks/useSortParams";
+import FilterDesktop from "../../components/Product/FilterDesktop";
+import { COLLECTION, FILTERS } from "../../data/Products";
+import { ProductType } from "../../utiles/interfaces";
 import { ProductCard3 } from "components/ui";
 import { accessory, computer, smartphone } from "data/Products/CollectionsData";
 
-const Collections = () => {
+const AllProducts = () => {
   const { query, searchParams, setSortParams, deleteSortParams } =
     useSortParams();
 
@@ -130,4 +130,4 @@ const Collections = () => {
   );
 };
 
-export default Collections;
+export default AllProducts;
