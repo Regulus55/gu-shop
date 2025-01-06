@@ -1,4 +1,4 @@
-import { AuthImageContainer, Button, Input } from "components/ui";
+import { AuthImageContainer, Button, Input, Inputs } from "components/ui";
 import { EMAIL_REGEX } from "data/Auth/authData";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -66,9 +66,9 @@ const Login = () => {
     <section className="m-auto grid min-h-[calc(100vh-65px)] w-full grid-cols-10">
       <div className="col-span-10 flex h-full w-full grow flex-col items-center justify-center bg-white shadow-slate-50 drop-shadow-md lg:col-span-4">
         <div className="mb-14 flex-col items-center text-center">
-          <h2 className="mb-2 text-3xl font-bold">Hello Again!</h2>
+          <h2 className="mb-2 text-4xl font-bold">Log In</h2>
           <p className="text-slate-500">
-            Welcome back! Please enter your detail.
+            Please enter your details to continue
           </p>
         </div>
         <div className="flex w-full flex-col items-center">
@@ -76,7 +76,7 @@ const Login = () => {
             className="flex w-full max-w-sm flex-col"
             onSubmit={handleSubmit((data) => submit(data))}
           >
-            <Input
+            <Inputs
               {...register("email", {
                 required: "Please provide an email",
                 pattern: {
@@ -86,14 +86,14 @@ const Login = () => {
               })}
               error={errors.email?.message}
               ariaInvalid={isDirty}
-              labelText="Email"
+              placeholder="Email"
               type="email"
               className="mb-3"
-              autofocus
+              // autofocus
               autocomplete="on"
             />
 
-            <Input
+            <Inputs
               {...register("password", {
                 required: "Please provide a password",
                 minLength: {
@@ -107,7 +107,7 @@ const Login = () => {
               })}
               error={errors.password?.message}
               ariaInvalid={isDirty}
-              labelText="Password"
+              placeholder="Password"
               type="password"
               className="mb-10"
               autocomplete="off"
@@ -161,10 +161,10 @@ const Login = () => {
 
       <AuthImageContainer
         image={"/images/login.webp"}
-        firstText="shop smarter"
-        secondText="Login here"
-        width={250}
-        height={250}
+        firstText="Welcome Again!"
+        secondText="Log in to your account"
+        width={300}
+        height={300}
       />
     </section>
   );
