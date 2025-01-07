@@ -1,6 +1,5 @@
-FROM node:16-alpine as builder
+FROM node:20-slim
 WORKDIR '/app'
-COPY package.json .
-RUN npm install
 COPY . .
+RUN ["npm", "install"]
 CMD ["npm","run","start"]
