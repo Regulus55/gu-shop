@@ -4,7 +4,7 @@ interface UploadProps {
   onFileUpload: (file: File) => void;
 }
 
-const UpdateUserProfileImage: React.FC<UploadProps> = ({ onFileUpload }) => {
+const UpdateImage: React.FC<UploadProps> = ({ onFileUpload }) => {
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
@@ -24,4 +24,4 @@ const UpdateUserProfileImage: React.FC<UploadProps> = ({ onFileUpload }) => {
   );
 };
 
-export default UpdateUserProfileImage;
+export default UpdateImage;

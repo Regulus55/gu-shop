@@ -4,7 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { ProductTitle } from "components/ui";
-import { UpdateUserProfileImage } from "./components";
+import UpdateImage from "components/layout/UpdateImage";
 
 interface profileType {
   username: string;
@@ -61,28 +61,8 @@ const EditProfile = () => {
       // setValue('image',photoImg[0])
     }
   }, [profileInfo]);
-  // useEffect(() => {
-  //     if (localStorage.getItem("token") === null) {
-  //         navigate("/login");
-  //     }
-  // }, []);
 
-  // 이미지
-  // const watchImage = watch("profileImage");
-  // const [photoImg, setPhotoImg] = useState(
-  //   profileInfo ? profileInfo?.profileImg : "/images/default_image.webp"
-  // );
-
-  // useEffect(() => {
-  //   if (watchImage && watchImage.length > 0) {
-  //     // 유저가 이미지 넣은거 있으면
-  //     setPhotoImg(URL.createObjectURL(watchImage[0])); // 유저의 이미지를 사진에 넣는다
-  //     // 파일 목록을 포함한 FileList 객체의 첫번째 사진을 PhotoImg 에 넣는다
-  //   }
-  // }, [watchImage]);
-
-  /////////////////
-
+  // 프로필 이미지
   const handleFileUpload = (file: File) => {
     setValue("profileImage", file);
   };
@@ -95,9 +75,9 @@ const EditProfile = () => {
     const userInput = {
       username: data.username,
       email: data.email,
-      // image: data.image,
       image: data.profileImage,
     };
+    console.log("userInput", userInput);
 
     try {
       const config = {
@@ -106,12 +86,11 @@ const EditProfile = () => {
         },
       };
       const url = "http://localhost:8000/api/user";
-      // const result = await axios.put(url, userInput, config);
-      // console.log("result", result);
-      // if (result.status === 200) {
-      //   alert("Personal Information Successfully Editted");
-      // }
-      console.log("userInput", userInput);
+      const result = await axios.put(url, userInput, config);
+      console.log("result", result);
+      if (result.status === 200) {
+        alert("Personal Information Successfully Editted");
+      }
     } catch (e) {
       console.log(e);
     }
@@ -242,7 +221,7 @@ const EditProfile = () => {
                   Upload Image
                 </button> */}
 
-                <UpdateUserProfileImage onFileUpload={handleFileUpload} />
+                <UpdateImage onFileUpload={handleFileUpload} />
               </div>
             </form>
           </div>
