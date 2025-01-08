@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="sm:col-span-12 lg:col-span-6">
             <div className="mb-2">
               <Link to="/" className="flex items-center" aria-label="Cruip">
-                <img src="/images/g200.png" className="h-12 w-12 mr-2 mb-2" />
+                <FaShopify size="64px" color="#885CF6" className="pb-2" />
                 <span className="text-3xl font-bold text-violet-500 pb-2 tracking-tight">
                   GUshop
                 </span>
@@ -38,7 +38,7 @@ const Footer = () => {
             className={"sm:col-span-6 md:col-span-3 lg:col-span-2 lg:ml-auto"}
           >
             <h6 className={"mb-2 font-medium text-gray-800"}>MARKET PLACE</h6>
-            <ul className={"text-sm"}>
+            <ul className={"text-sm "}>
               {footerMarketPlace.map(({ name, link }) => (
                 <li className={"mb-2"} key={name}>
                   <Link

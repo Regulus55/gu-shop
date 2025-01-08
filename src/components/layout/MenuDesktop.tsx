@@ -112,8 +112,7 @@ const MenuDesktop = forwardRef<HTMLButtonElement, menuProps>(
 
             <div className="ml-4 flex lg:ml-0">
               <Link to="/" className="flex items-center">
-                {/* <FaShopify size="48px" color="#885CF6" className="pb-2"/> */}
-                <img src="/images/g200.png" className="h-8 w-8 mr-2 mb-2" />
+                <FaShopify size="48px" color="#885CF6" className="pb-2" />
                 <span className="text-2xl font-bold text-violet-500 pb-2 tracking-tight">
                   GUshop
                 </span>
