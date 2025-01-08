@@ -214,13 +214,6 @@ const EditProfile = () => {
                   src="/images/default_image.webp"
                   className="w-56 h-56 mb-6 rounded-full"
                 />
-                {/* <button
-                  className="bg-gray-300 text-white font-medium border border-gray-500 px-4 py-2 rounded-lg hover:bg-violet-600"
-                  onClick={() => console.log("upload file")}
-                >
-                  Upload Image
-                </button> */}
-
                 <UpdateImage onFileUpload={handleFileUpload} />
               </div>
             </form>
