@@ -63,14 +63,22 @@ const EditProfile = () => {
   }, [profileInfo]);
 
   // 프로필 이미지
+  const [preview, setPreview] = useState<string | null>(null);
+  const profileImage = watch("profileImage");
+
   const handleFileUpload = (file: File) => {
     setValue("profileImage", file);
+    const previewURL = URL.createObjectURL(file);
+    setPreview(previewURL);
   };
 
   //  프로필수정 제출
   const submit = async (data: any) => {
     const formData = new FormData();
     formData.append("file", data.profileImage);
+    if (data.profileImage) {
+      formData.append("profileImage", data.profileImage);
+    }
 
     const userInput = {
       username: data.username,
@@ -209,10 +217,10 @@ const EditProfile = () => {
               <div className="col-span-1 md:order-3 lg:order-2" />
 
               {/* 유저이미지 */}
-              <div className="col-span-1 lg:col-span-2 flex flex-col items-center justify-center px-4 order-1 md:order-2 flex justify-center mb-16 ">
+              <div className="col-span-1 lg:col-span-2 flex flex-col items-center justify-center w-full h-full px-4 order-1 md:order-2 flex justify-center mb-16 ">
                 <LazyLoadImage
-                  src="/images/default_image.webp"
-                  className="w-56 h-56 mb-6 rounded-full"
+                  src={preview || "/images/default_image.webp"}
+                  className="w-56 h-56 mb-6 rounded-full object-cover"
                 />
                 <UpdateImage onFileUpload={handleFileUpload} />
               </div>
