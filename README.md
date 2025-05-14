@@ -51,4 +51,4 @@ cd gu-shop
 
 npm install
 
-npm run dev
+npm start
